@@ -1,0 +1,27 @@
+@import '../../../../../../_shared/const/variables';
+
+.form {
+    @include flexVerticalGap(4);
+
+    &_field {
+        @include flexVerticalGap(2);
+    }
+
+    &_checkbox {
+        @include flexHorizontalGap(2);
+        align-items: flex-start;
+
+        > input {
+            display: flex;
+            min-width: rem(20);
+            height: rem(20);
+            margin: 0;
+            margin-top: rem(3);
+            accent-color: $primary-600;
+        }
+    }
+
+    > button {
+        margin-top: rem(8);
+    }
+}

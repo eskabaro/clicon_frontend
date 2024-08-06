@@ -1,0 +1,520 @@
+@import '/app/_shared/const/variables';
+@import './root';
+@import './null';
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    width: min($container-max-width, 90%);
+    margin: auto;
+}
+
+.scroll-lock {
+    overflow: hidden;
+}
+
+// Aligns
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// Backgrounds
+.background_gray-900 {
+    background-color: $gray-900;
+}
+
+.background_gray-800 {
+    background-color: $gray-800;
+}
+
+.background_gray-700 {
+    background-color: $gray-700;
+}
+
+.background_gray-600 {
+    background-color: $gray-600;
+}
+
+.background_gray-500 {
+    background-color: $gray-500;
+}
+
+.background_gray-400 {
+    background-color: $gray-400;
+}
+
+.background_gray-300 {
+    background-color: $gray-300;
+}
+
+.background_gray-200 {
+    background-color: $gray-200;
+}
+
+.background_gray-100 {
+    background-color: $gray-100;
+}
+
+.background_gray-50 {
+    background-color: $gray-50;
+}
+
+.background_gray-00 {
+    background-color: $gray-00;
+}
+
+.background_primary-900 {
+    background-color: $primary-900;
+}
+
+.background_primary-800 {
+    background-color: $primary-800;
+}
+
+.background_primary-700 {
+    background-color: $primary-700;
+}
+
+.background_primary-600 {
+    background-color: $primary-600;
+}
+
+.background_primary-500 {
+    background-color: $primary-500;
+}
+
+.background_primary-400 {
+    background-color: $primary-400;
+}
+
+.background_primary-300 {
+    background-color: $primary-300;
+}
+
+.background_primary-200 {
+    background-color: $primary-200;
+}
+
+.background_primary-100 {
+    background-color: $primary-100;
+}
+
+.background_primary-50 {
+    background-color: $primary-50;
+}
+
+.background_secondary-900 {
+    background-color: $secondary-900;
+}
+
+.background_secondary-800 {
+    background-color: $secondary-800;
+}
+
+.background_secondary-700 {
+    background-color: $secondary-700;
+}
+
+.background_secondary-600 {
+    background-color: $secondary-600;
+}
+
+.background_secondary-500 {
+    background-color: $secondary-500;
+}
+
+.background_secondary-400 {
+    background-color: $secondary-400;
+}
+
+.background_secondary-300 {
+    background-color: $secondary-300;
+}
+
+.background_secondary-200 {
+    background-color: $secondary-200;
+}
+
+.background_secondary-100 {
+    background-color: $secondary-100;
+}
+
+.background_secondary-50 {
+    background-color: $secondary-50;
+}
+
+.background_success-900 {
+    background-color: $success-900;
+}
+
+.background_success-800 {
+    background-color: $success-800;
+}
+
+.background_success-700 {
+    background-color: $success-700;
+}
+
+.background_success-600 {
+    background-color: $success-600;
+}
+
+.background_success-500 {
+    background-color: $success-500;
+}
+
+.background_success-400 {
+    background-color: $success-400;
+}
+
+.background_success-300 {
+    background-color: $success-300;
+}
+
+.background_success-200 {
+    background-color: $success-200;
+}
+
+.background_success-100 {
+    background-color: $success-100;
+}
+
+.background_success-50 {
+    background-color: $success-50;
+}
+
+.background_warning-900 {
+    background-color: $warning-900;
+}
+
+.background_warning-800 {
+    background-color: $warning-800;
+}
+
+.background_warning-700 {
+    background-color: $warning-700;
+}
+
+.background_warning-600 {
+    background-color: $warning-600;
+}
+
+.background_warning-500 {
+    background-color: $warning-500;
+}
+
+.background_warning-400 {
+    background-color: $warning-400;
+}
+
+.background_warning-300 {
+    background-color: $warning-300;
+}
+
+.background_warning-200 {
+    background-color: $warning-200;
+}
+
+.background_warning-100 {
+    background-color: $warning-100;
+}
+
+.background_warning-50 {
+    background-color: $warning-50;
+}
+
+.background_danger-900 {
+    background-color: $danger-900;
+}
+
+.background_danger-800 {
+    background-color: $danger-800;
+}
+
+.background_danger-700 {
+    background-color: $danger-700;
+}
+
+.background_danger-600 {
+    background-color: $danger-600;
+}
+
+.background_danger-500 {
+    background-color: $danger-500;
+}
+
+.background_danger-400 {
+    background-color: $danger-400;
+}
+
+.background_danger-300 {
+    background-color: $danger-300;
+}
+
+.background_danger-200 {
+    background-color: $danger-200;
+}
+
+.background_danger-100 {
+    background-color: $danger-100;
+}
+
+.background_danger-50 {
+    background-color: $danger-50;
+}
+
+// Colors
+.color_gray-900 {
+    color: $gray-900;
+}
+
+.color_gray-800 {
+    color: $gray-800;
+}
+
+.color_gray-700 {
+    color: $gray-700;
+}
+
+.color_gray-600 {
+    color: $gray-600;
+}
+
+.color_gray-500 {
+    color: $gray-500;
+}
+
+.color_gray-400 {
+    color: $gray-400;
+}
+
+.color_gray-300 {
+    color: $gray-300;
+}
+
+.color_gray-200 {
+    color: $gray-200;
+}
+
+.color_gray-100 {
+    color: $gray-100;
+}
+
+.color_gray-50 {
+    color: $gray-50;
+}
+
+.color_gray-00 {
+    color: $gray-00;
+}
+
+.color_primary-900 {
+    color: $primary-900;
+}
+
+.color_primary-800 {
+    color: $primary-800;
+}
+
+.color_primary-700 {
+    color: $primary-700;
+}
+
+.color_primary-600 {
+    color: $primary-600;
+}
+
+.color_primary-500 {
+    color: $primary-500;
+}
+
+.color_primary-400 {
+    color: $primary-400;
+}
+
+.color_primary-300 {
+    color: $primary-300;
+}
+
+.color_primary-200 {
+    color: $primary-200;
+}
+
+.color_primary-100 {
+    color: $primary-100;
+}
+
+.color_primary-50 {
+    color: $primary-50;
+}
+
+.color_secondary-900 {
+    color: $secondary-900;
+}
+
+.color_secondary-800 {
+    color: $secondary-800;
+}
+
+.color_secondary-700 {
+    color: $secondary-700;
+}
+
+.color_secondary-600 {
+    color: $secondary-600;
+}
+
+.color_secondary-500 {
+    color: $secondary-500;
+}
+
+.color_secondary-400 {
+    color: $secondary-400;
+}
+
+.color_secondary-300 {
+    color: $secondary-300;
+}
+
+.color_secondary-200 {
+    color: $secondary-200;
+}
+
+.color_secondary-100 {
+    color: $secondary-100;
+}
+
+.color_secondary-50 {
+    color: $secondary-50;
+}
+
+.color_success-900 {
+    color: $success-900;
+}
+
+.color_success-800 {
+    color: $success-800;
+}
+
+.color_success-700 {
+    color: $success-700;
+}
+
+.color_success-600 {
+    color: $success-600;
+}
+
+.color_success-500 {
+    color: $success-500;
+}
+
+.color_success-400 {
+    color: $success-400;
+}
+
+.color_success-300 {
+    color: $success-300;
+}
+
+.color_success-200 {
+    color: $success-200;
+}
+
+.color_success-100 {
+    color: $success-100;
+}
+
+.color_success-50 {
+    color: $success-50;
+}
+
+.color_warning-900 {
+    color: $warning-900;
+}
+
+.color_warning-800 {
+    color: $warning-800;
+}
+
+.color_warning-700 {
+    color: $warning-700;
+}
+
+.color_warning-600 {
+    color: $warning-600;
+}
+
+.color_warning-500 {
+    color: $warning-500;
+}
+
+.color_warning-400 {
+    color: $warning-400;
+}
+
+.color_warning-300 {
+    color: $warning-300;
+}
+
+.color_warning-200 {
+    color: $warning-200;
+}
+
+.color_warning-100 {
+    color: $warning-100;
+}
+
+.color_warning-50 {
+    color: $warning-50;
+}
+
+.color_danger-900 {
+    color: $danger-900;
+}
+
+.color_danger-800 {
+    color: $danger-800;
+}
+
+.color_danger-700 {
+    color: $danger-700;
+}
+
+.color_danger-600 {
+    color: $danger-600;
+}
+
+.color_danger-500 {
+    color: $danger-500;
+}
+
+.color_danger-400 {
+    color: $danger-400;
+}
+
+.color_danger-300 {
+    color: $danger-300;
+}
+
+.color_danger-200 {
+    color: $danger-200;
+}
+
+.color_danger-100 {
+    color: $danger-100;
+}
+
+.color_danger-50 {
+    color: $danger-50;
+}

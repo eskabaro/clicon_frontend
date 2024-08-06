@@ -1,0 +1,13 @@
+@import '../../_shared/const/variables';
+
+.form {
+    @include flexVerticalGap(4);
+
+    &_field {
+        @include flexVerticalGap(2);
+    }
+
+    > button {
+        margin-top: rem(8);
+    }
+}

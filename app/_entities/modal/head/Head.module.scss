@@ -1,0 +1,14 @@
+@import '../../../_shared/const/variables';
+
+.head {
+    @include flexHorizontalGap(5);
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(16) rem(24);
+    border-bottom: rem(1) solid $gray-100;
+
+    &_btn {
+        width: rem(20);
+        height: rem(20);
+    }
+}

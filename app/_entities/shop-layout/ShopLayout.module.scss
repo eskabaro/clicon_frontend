@@ -1,0 +1,10 @@
+@import '../../_shared/const/variables';
+
+.wrapper {
+    @include container;
+    display: grid;
+    grid-template-columns: 0.7fr 2.3fr;
+    grid-template-rows: 1fr;
+    gap: rem(24);
+    padding-block: rem(40);
+}

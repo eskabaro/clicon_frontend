@@ -1,0 +1,6 @@
+@import '../../../../../../../_shared/const/variables';
+
+.heading {
+    @include flexVerticalGap(3);
+    max-width: rem(480);
+}

@@ -1,0 +1,58 @@
+@import '../../_shared/const/variables';
+
+.wrapper {
+    background-color: $secondary-700;
+
+    &_sub-header {
+        @include flexHorizontalGap(5);
+        @include container;
+        justify-content: space-between;
+        padding-block: rem(12);
+    }
+
+    &_header {
+        @include container;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: rem(20);
+        padding-block: rem(20);
+
+        > nav {
+            @include flexHorizontalGap(6);
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+}
+
+.navigation {
+    @include flexHorizontalGap(6);
+
+    &_line {
+        width: rem(1);
+        height: 100%;
+        opacity: 0.15;
+        background-color: $gray-00;
+    }
+
+    &_list {
+        @include flexHorizontalGap(3);
+        z-index: 10;
+        align-items: center;
+
+        &:has(div) {
+            @include flexHorizontalGap(6);
+        }
+
+        a {
+            display: flex;
+        }
+    }
+}
+
+.search-input {
+    grid-area: 1 / 2 / 2 / 4;
+    background-color: $gray-00;
+    box-shadow: 0 rem(8) rem(32) 0 rgba(0 0 0 / 8%);
+}

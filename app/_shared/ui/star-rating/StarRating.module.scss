@@ -1,0 +1,19 @@
+@import '../../const/variables';
+
+.wrapper {
+    @include flexHorizontalGap(0);
+    align-items: center;
+
+    &_star {
+        cursor: pointer;
+        height: rem(16);
+
+        &.readonly {
+            cursor: default;
+        }
+
+        > input {
+            display: none;
+        }
+    }
+}

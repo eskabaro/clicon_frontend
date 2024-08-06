@@ -1,0 +1,26 @@
+@import '../../_shared/const/variables';
+
+.button {
+    @include flexHorizontalGap(1.5);
+    align-items: center;
+    opacity: 1;
+    color: $gray-00;
+    transition: opacity 0.1s ease;
+
+    @media (any-hover: hover) {
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.item {
+    &.active {
+        color: $primary-500;
+    }
+}
+
+.item-box {
+    @include flexHorizontalGap(3);
+    align-items: center;
+}

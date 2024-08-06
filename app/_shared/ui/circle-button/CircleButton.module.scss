@@ -1,0 +1,35 @@
+@import '../../const/variables';
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: rem(1);
+    border-radius: 50%;
+    transition: all 150ms ease;
+
+    &.small {
+        width: rem(38);
+        height: rem(38);
+    }
+
+    &.large {
+        width: rem(48);
+        height: rem(48);
+    }
+
+    &.white {
+        background-color: $gray-00;
+        color: $gray-900;
+    }
+
+    &.orange {
+        background-color: $primary-500;
+        color: $gray-00;
+    }
+
+    @media (any-hover: hover) {
+        // &:hover {
+        // }
+    }
+}

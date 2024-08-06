@@ -1,0 +1,28 @@
+@import '../../_shared/const/variables';
+
+.wrapper {
+    padding-block: rem(26);
+    background-color: $gray-50;
+
+    &_list {
+        @include container;
+        @include flexHorizontalGap(2);
+        align-items: center;
+    }
+}
+
+.item {
+    @include flexHorizontalGap(2);
+    align-items: center;
+
+    > a {
+        color: $gray-600;
+        text-decoration: none;
+
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

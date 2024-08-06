@@ -1,0 +1,28 @@
+@import '../../../../_shared/const/variables';
+
+@mixin paddingFirstLastItems($property) {
+    > td {
+        #{$property}: rem(24);
+    }
+}
+
+.wrapper {
+    > tr {
+        &:first-child {
+            @include paddingFirstLastItems('padding-top');
+        }
+
+        &:last-child {
+            @include paddingFirstLastItems('padding-bottom');
+        }
+
+        > td {
+            padding: rem(10) rem(24);
+        }
+    }
+}
+
+.center {
+    padding-block: rem(80) !important;
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+@import '../../_shared/const/variables';
+
+.wrapper {
+    @include flexVerticalGap(6);
+    align-items: center;
+    padding: rem(16);
+    border: rem(1) solid $gray-100;
+    border-radius: rem(4);
+    transition: all 0.2s ease;
+
+    &_image {
+        position: relative;
+
+        > img {
+            object-fit: contain;
+        }
+    }
+
+    &_info {
+        @include flexVerticalGap(2);
+
+        > a {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            box-shadow: 0 rem(8) rem(24) 0 rgb(25 28 31 / 12%);
+
+            .wrapper_image > .product-actions {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.product-actions {
+    @include flexHorizontalGap(2);
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba($color: #000, $alpha: 15%);
+    transition: all 0.2s ease;
+}
+
+.rating {
+    @include flexHorizontalGap(1);
+    align-items: center;
+}

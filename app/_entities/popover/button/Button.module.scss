@@ -1,0 +1,6 @@
+@import '../../../_shared/const/variables';
+
+.button {
+    @include flexHorizontalGap(1.5);
+    align-items: center;
+}

@@ -1,0 +1,22 @@
+@import '../../const/variables';
+
+.line {
+    width: 100%;
+    min-height: 1px;
+    max-height: 1px;
+
+    @for $i from 10 through 25 {
+        @if $i % 5 == 0 {
+            &.opacity_#{$i} {
+                opacity: $i / 100;
+            }
+        }
+    }
+}
+
+.line-box {
+    display: flex;
+    gap: rem(8);
+    align-items: center;
+    text-wrap: nowrap;
+}

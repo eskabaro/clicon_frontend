@@ -1,0 +1,13 @@
+@import '../../../_shared/const/variables';
+
+.footer {
+    border-top: rem(1) solid $gray-100;
+
+    > tr > td {
+        padding: rem(24);
+    }
+}
+
+.content-box {
+    @include flexHorizontalGap(5);
+}

@@ -1,0 +1,8 @@
+@import '../../../../../../_shared/const/variables';
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: rem(24);
+}

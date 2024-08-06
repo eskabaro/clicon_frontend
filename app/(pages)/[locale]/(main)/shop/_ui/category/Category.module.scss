@@ -1,0 +1,9 @@
+@import '../../../../../../_shared/const/variables';
+
+.wrapper {
+    @include flexVerticalGap(4);
+
+    &_list {
+        @include flexVerticalGap(3);
+    }
+}

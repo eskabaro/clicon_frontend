@@ -1,0 +1,43 @@
+@import '../../../../../../../_shared/const/variables';
+
+.table {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.footer-box {
+    justify-content: space-between;
+}
+
+.item-name {
+    @include flexHorizontalGap(2);
+    align-items: center;
+
+    > button {
+        height: rem(24);
+
+        > svg {
+            transition: all 150ms ease;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                > svg {
+                    color: $danger-500;
+                }
+            }
+        }
+    }
+
+    > a {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

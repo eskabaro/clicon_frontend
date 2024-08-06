@@ -1,0 +1,17 @@
+@import '../../../../../../../_shared/const/variables';
+
+.coupon {
+    grid-area: 2 / 3 / 3 / 4;
+    border: rem(1) solid $gray-100;
+    border-radius: rem(4);
+
+    &_heading {
+        padding: rem(24);
+        border-bottom: rem(1) solid $gray-100;
+    }
+
+    &_submit-box {
+        @include flexVerticalGap(4);
+        padding: rem(24);
+    }
+}

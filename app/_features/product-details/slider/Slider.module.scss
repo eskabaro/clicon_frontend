@@ -1,0 +1,25 @@
+@import '../../../_shared/const/variables';
+
+.wrapper {
+    @include flexVerticalGap(6);
+
+    &_image {
+        object-fit: contain;
+        border: rem(1) solid $gray-100;
+        border-radius: rem(4);
+    }
+
+    &_slider {
+        @include flexHorizontalGap(2);
+        transform: translateX(0);
+        overflow: hidden;
+        max-width: rem(616);
+
+        > img {
+            object-fit: contain;
+            background-color: #fafafa;
+            border: rem(1) solid $gray-100;
+            border-radius: rem(2);
+        }
+    }
+}

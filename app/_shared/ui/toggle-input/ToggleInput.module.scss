@@ -1,0 +1,15 @@
+@import '../../const/variables';
+
+.wrapper {
+    @include flexHorizontalGap(2);
+    cursor: pointer;
+    align-items: center;
+
+    > input {
+        cursor: pointer;
+        width: rem(20);
+        height: rem(20);
+        margin: 0;
+        accent-color: $primary-600;
+    }
+}

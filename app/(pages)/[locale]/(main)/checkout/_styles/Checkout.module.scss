@@ -1,0 +1,5 @@
+@import '../../../../../_shared/const/variables';
+
+.wrapper {
+    @include container;
+}

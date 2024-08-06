@@ -1,0 +1,119 @@
+{
+    "Locales": {
+        "en": "English",
+        "ua": "Ukrainian",
+        "ru": "Russian"
+    },
+    "Header": {
+        "welcome-text": "Welcome to Clicon online eCommerce store.",
+        "follow": "Follow us:",
+        "search-placeholder": "Search for anything...",
+        "cart-popover": {
+            "title": "Shopping Cart",
+            "total": "Sub-total:",
+            "is-empty": "Cart is empty",
+            "btns": {
+                "checkout": "CHECKOUT NOW",
+                "view": "VIEW CART"
+            }
+        },
+        "wishlist-popover": {
+            "title": "Wishlist",
+            "is-empty": "List is empty",
+            "btns": {
+                "view": "VIEW WISHLIST"
+            }
+        },
+        "account-popover": {
+            "title": "Sign in to your account",
+            "don’t-have": "Don’t have account",
+            "btn": "CREATE ACCOUNT"
+        }
+    },
+    "Auth": {
+        "nav-btns": {
+            "login": "Sign In",
+            "register": "Sign Up"
+        },
+        "login": {
+            "labels": {
+                "email": "Email Address",
+                "password": "Password"
+            },
+            "submit-btn": "Login"
+        },
+        "register": {
+            "labels": {
+                "first-name": "First Name",
+                "last-name": "Last Name",
+                "email": "Email Address",
+                "password": "Password"
+            },
+            "submit-btn": "Sign Up"
+        }
+    },
+    "Dashboard": {
+        "aside": {
+            "dashboard": "Dashboard",
+            "order-history": "Order History",
+            "track-order": "Track Order",
+            "shopping-cart": "Shopping Cart",
+            "wishlist": "Wishlist",
+            "compare": "Compare",
+            "browsing-history": "Browsing History",
+            "setting": "Setting",
+            "log-out": "Log-out"
+        },
+        "dashboard": {
+            "hello": "Hello, {name}",
+            "text": "From your account dashboard. you can easily check & view your <orders>Recent Orders</orders>, manage your <shipping>Shipping and Billing Addresses</shipping> and edit your <sittings>Password</sittings> and <sittings>Account Details</sittings>."
+        },
+        "shopping-cart": {
+            "table": {
+                "title": "SHOPPING CART",
+                "head": {
+                    "products": "PRODUCTS",
+                    "price": "PRICE",
+                    "quantity": "QUANTITY",
+                    "sub-total": "SUB-TOTAL"
+                },
+                "btns": {
+                    "return": "RETURN TO SHOP",
+                    "update": "UPDATE CART"
+                }
+            },
+            "cart-totals": {
+                "title": "CART TOTALS",
+                "info": {
+                    "total": "Sub-total",
+                    "shipping": "Shipping",
+                    "discount": "Discount",
+                    "tax": "Tax"
+                },
+                "total": "Total",
+                "btn": "PROCEED TO CHECKOUT"
+            },
+            "coupon": {
+                "title": "COUPON CODE",
+                "placeholder": "Coupon",
+                "text": "After clicking the 'Apply Coupon' button, the system checks the validity of the coupon and applies the appropriate discount to the total order amount.",
+                "btn": "APPLY COUPON"
+            }
+        },
+        "log-out-modal": {
+            "message": "Do you really want to leave?",
+            "btns": {
+                "ok": "Yes",
+                "cancel": "Cancel"
+            }
+        }
+    },
+    "Not-Found": {
+        "title": "404, Сторінку не знайдено",
+        "text": "Щось пішло не так. Схоже, що запитуване вами не знайдено. Можливо, посилання зламалося або сторінка була видалена.",
+        "btns": {
+            "back": "Назад",
+            "home": "На головну"
+        }
+    }
+}

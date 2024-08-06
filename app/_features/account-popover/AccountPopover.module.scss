@@ -1,0 +1,7 @@
+@import '../../_shared/const/variables';
+
+.body {
+    @include flexVerticalGap(5);
+    width: rem(376);
+    padding: rem(24);
+}

@@ -1,0 +1,117 @@
+@import '../../_shared/const/variables';
+
+.button {
+    position: relative;
+
+    &::after {
+        content: attr(data-cart-length);
+        position: absolute;
+        top: rem(-2);
+        right: rem(-2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: rem(20);
+        height: rem(20);
+        background-color: $gray-00;
+        border: rem(2) solid $secondary-700;
+        border-radius: 50%;
+        font-size: rem(12);
+        font-weight: 600;
+        color: $secondary-700;
+    }
+
+    &.inactive::after {
+        display: none;
+    }
+}
+
+.body {
+    width: rem(376);
+
+    &_header {
+        padding: rem(16) rem(24);
+    }
+
+    &_list {
+        @include flexVerticalGap(4);
+        padding: rem(20) rem(24);
+    }
+
+    &_footer {
+        @include flexVerticalGap(5);
+        padding: rem(20) rem(24) rem(24);
+    }
+}
+
+.btns-box {
+    @include flexVerticalGap(3);
+}
+
+.total-count {
+    @include flexHorizontalGap(5);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.empty-text {
+    padding-block: rem(35);
+}
+
+.item-wrapper {
+    @include flexHorizontalGap(4);
+    position: relative;
+    padding-right: rem(16);
+
+    &_image {
+        box-sizing: border-box;
+        border: rem(1) solid $gray-100;
+        border-radius: rem(2);
+    }
+
+    &_heading {
+        @include flexVerticalGap(2);
+        justify-content: center;
+
+        > a {
+            cursor: pointer;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            width: 80%;
+            text-decoration: none;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &_btn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.1s ease;
+    }
+
+    @media (any-hover: hover) {
+        &:hover .item-wrapper_btn {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    @media (any-hover: none) {
+        .item-wrapper_btn {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

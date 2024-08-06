@@ -1,0 +1,7 @@
+@import '../../../_shared/const/variables';
+
+.footer {
+    @include flexHorizontalGap(5);
+    padding: rem(24);
+    padding-top: 0;
+}

@@ -1,0 +1,13 @@
+@import '../../_shared/const/variables';
+
+.wrapper {
+    width: 100%;
+    height: fit-content;
+    border: rem(1) solid $gray-100;
+    border-radius: rem(4);
+
+    &_table {
+        width: 100%;
+        height: fit-content;
+    }
+}

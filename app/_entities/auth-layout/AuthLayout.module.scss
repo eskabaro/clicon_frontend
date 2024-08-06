@@ -1,0 +1,44 @@
+@import '/app/_shared/const/variables';
+
+.wrapper {
+    max-width: min-content;
+    margin: rem(100) auto;
+    border: rem(1) solid $gray-100;
+    border-radius: rem(4);
+    box-shadow: 0 rem(8) rem(40) 0 rgb(0 0 0 / 12%);
+
+    &_nav {
+        @include flexHorizontalGap(0);
+        position: relative;
+        border-bottom: rem(1.5) solid $gray-100;
+    }
+
+    &_children {
+        padding: rem(32);
+    }
+}
+
+.underline {
+    position: absolute;
+    bottom: rem(-1.5);
+    left: 0;
+    width: $auth-btn-width;
+    height: rem(1.5);
+    background-color: $primary-500;
+    transition: left 0.2s ease;
+}
+
+.btn {
+    @include fontSize(20, 18, 16);
+    position: relative;
+    width: $auth-btn-width;
+    padding-block: rem(16);
+    font-weight: 600;
+    line-height: 140%;
+    color: $gray-500;
+    transition: color 0.2s ease;
+
+    &.active {
+        color: $gray-900;
+    }
+}

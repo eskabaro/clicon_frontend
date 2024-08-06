@@ -1,0 +1,89 @@
+@import '../../../const/variables';
+
+.wrapper {
+    position: fixed;
+    z-index: 10;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000, $alpha: 80%);
+    transition: all 150ms ease-in-out;
+
+    &.fade-out {
+        animation: fade-out 150ms ease-out forwards;
+    }
+
+    &.fade-in {
+        animation: fade-in 150ms ease-out forwards;
+    }
+
+    &_modal {
+        @include flexVerticalGap(6);
+        position: relative;
+        background-color: $gray-00;
+        border-radius: rem(4);
+        transition: all 150ms ease-in-out;
+
+        &.fade-out {
+            transform: translateY(rem(0));
+            animation: fade-out 150ms ease-out forwards;
+        }
+
+        &.fade-in {
+            transform: translateY(rem(15));
+            animation: fade-in 150ms ease-out forwards;
+        }
+
+        &.small {
+            width: 100%;
+            max-width: rem(472);
+        }
+
+        &.large {
+            width: 100%;
+            max-width: 70%;
+            padding: rem(40);
+        }
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: rem(-72);
+    display: grid;
+    place-items: center;
+    width: rem(48);
+    height: rem(48);
+    background: rgba($color: #fff, $alpha: 12%);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background: rgba($color: #fff, $alpha: 10%);
+        }
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

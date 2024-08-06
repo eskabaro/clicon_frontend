@@ -1,0 +1,77 @@
+@import '../../const/variables';
+
+@mixin size($size) {
+    font-size: rem($size);
+}
+
+@mixin generateSize($className, $property, $from, $to, $step: 1) {
+    @for $i from $from through $to {
+        $value: $from + ($i - $from) * $step;
+
+        #{$className}#{$value} {
+            #{$property}: rem($value);
+        }
+    }
+}
+
+@include generateSize('.size-', 'font-size', 8, 36, 2);
+
+@media screen and (max-width: $screen-md) {
+    @include generateSize('.md-size-', 'font-size', 8, 36, 2);
+}
+
+@media screen and (max-width: $screen-sm) {
+    @include generateSize('.sm-size-', 'font-size', 8, 36, 2);
+}
+
+.nowrap {
+    text-wrap: nowrap;
+}
+
+.weight-400 {
+    font-weight: 400;
+}
+
+.weight-500 {
+    font-weight: 500;
+}
+
+.weight-600 {
+    font-weight: 600;
+}
+
+.weight-700 {
+    font-weight: 700;
+}
+
+.lineHeight-100 {
+    line-height: 100%;
+}
+
+.line-height-120 {
+    line-height: 120%;
+}
+
+.line-height-130 {
+    line-height: 130%;
+}
+
+.line-height-140 {
+    line-height: 140%;
+}
+
+.line-height-150 {
+    line-height: 150%;
+}
+
+.transform-capitalize {
+    text-transform: capitalize;
+}
+
+.transform-lowercase {
+    text-transform: lowercase;
+}
+
+.transform-uppercase {
+    text-transform: uppercase;
+}

@@ -1,0 +1,42 @@
+@import '../../const/variables';
+
+.counter {
+    @include flexHorizontalGap(7);
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: fit-content;
+    padding: rem(12) rem(20);
+    border: solid $gray-100;
+    border-radius: rem(3);
+
+    > span {
+        width: rem(26);
+    }
+
+    > button {
+        display: flex;
+        align-items: center;
+        transition: all 150ms ease;
+
+        &:disabled {
+            opacity: 0.6;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    &.small {
+        max-height: rem(48);
+        border-width: rem(1);
+    }
+
+    &.large {
+        height: rem(56);
+        border-width: rem(2);
+    }
+}

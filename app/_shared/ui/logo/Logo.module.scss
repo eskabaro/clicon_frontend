@@ -1,0 +1,6 @@
+@import '../../const/variables';
+
+.logo {
+    @include flexHorizontalGap(2);
+    width: fit-content;
+}

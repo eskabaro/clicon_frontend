@@ -1,0 +1,36 @@
+@import '../../const/variables';
+
+.input-box {
+    @include flexHorizontalGap(2);
+    padding: rem(14) rem(20);
+    border: rem(1) solid $gray-100;
+    border-radius: rem(2);
+    transition: all 0.1s ease;
+
+    &:focus-within {
+        border-color: $primary-500;
+    }
+
+    &.error {
+        background-color: $danger-50;
+        border-color: $danger-500;
+    }
+
+    &.full {
+        width: 100%;
+    }
+
+    &_input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+
+        // Sizes
+        &.small {
+        }
+
+        &.large {
+        }
+    }
+}

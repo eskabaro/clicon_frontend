@@ -1,0 +1,21 @@
+@import '../../const/variables';
+
+.spinner {
+    width: rem(14);
+    height: rem(14);
+    border: solid rem(2) transparent;
+    border-top-color: $gray-00;
+    border-left-color: $gray-00;
+    border-radius: 50%;
+    animation: loading-bar-spinner 500ms linear infinite;
+
+    @keyframes loading-bar-spinner {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}

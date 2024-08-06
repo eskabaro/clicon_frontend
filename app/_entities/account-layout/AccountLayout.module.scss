@@ -1,0 +1,61 @@
+@import '../../_shared/const/variables';
+
+@mixin activeItem($color) {
+    @if $color == $gray-50 {
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $color;
+            }
+        }
+    } @else {
+        background-color: $color;
+
+        > a > span {
+            color: $gray-00;
+        }
+
+        > a > svg path {
+            stroke: $gray-00;
+        }
+    }
+}
+
+.wrapper {
+    @include container;
+    display: grid;
+    grid-template-columns: 0.7fr 2.3fr;
+    grid-template-rows: 1fr;
+    gap: rem(72);
+    padding-block: rem(40);
+
+    &_aside {
+        min-width: rem(264);
+        height: fit-content;
+        padding-block: rem(16);
+        border: rem(1) solid $gray-100;
+        border-radius: rem(4);
+        box-shadow: 0 rem(8) rem(40) 0 rgba(0 0 0 / 8%);
+    }
+}
+
+.list {
+    &_item {
+        @include activeItem($gray-50);
+
+        &.active {
+            @include activeItem($primary-500);
+        }
+
+        > a,
+        div {
+            @include flexHorizontalGap(3);
+            align-items: center;
+            padding: rem(10) rem(24);
+            text-decoration: none;
+
+            &:is(div) {
+                cursor: pointer;
+            }
+        }
+    }
+}

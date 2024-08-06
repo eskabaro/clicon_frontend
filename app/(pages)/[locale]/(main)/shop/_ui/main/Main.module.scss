@@ -1,0 +1,12 @@
+@import '../../../../../../_shared/const/variables';
+
+.aside,
+.wrapper {
+    @include flexVerticalGap(6);
+
+    &_net {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(rem(234), 1fr));
+        gap: rem(16);
+    }
+}

@@ -1,0 +1,13 @@
+@import '../../../_shared/const/variables';
+
+.list {
+    @include flexVerticalGap(0);
+    position: absolute;
+    z-index: 1;
+    min-width: rem(180);
+    padding-block: rem(8);
+    background-color: $gray-00;
+    border: rem(1) solid $gray-100;
+    border-radius: rem(3);
+    box-shadow: 0 rem(8) rem(40) 0 rgb(0 0 0 / 12%);
+}
